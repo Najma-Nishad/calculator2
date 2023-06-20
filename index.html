@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" name="screen" id="display">
+            <table>
+                <tr>
+                    <td><button onclick="">AC</button></td>
+                    <td><button onclick="displayData('(')">(</button></td>
+                    <td><button onclick="displayData(')')">)</button></td>
+                    <td><button onclick="output()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayData(9)">9</button></td>
+                    <td><button onclick="displayData(8)">8</button></td>
+                    <td><button onclick="displayData(7)">7</button></td>
+                    <td><button onclick="displayData('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayData(6)">6</button></td>
+                    <td><button onclick="displayData(5)">5</button></td>
+                    <td><button onclick="displayData(4)">4</button></td>
+                    <td><button onclick="displayData('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayData(3)">3</button></td>
+                    <td><button onclick="displayData(2)">2</button></td>
+                    <td><button onclick="displayData(1)">1</button></td>
+                    <td><button onclick="displayData('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayData(0)">0</button></td>
+                    <td><button onclick="displayData('.')">.</button></td>
+                    <td><button onclick="displayData('%')">%</button></td>
+                    <td><button onclick="displayData('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="backspace()">del</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
